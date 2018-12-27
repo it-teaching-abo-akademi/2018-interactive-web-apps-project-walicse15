@@ -1,0 +1,27 @@
+{
+  "name": "project",
+  "version": "1.1.0",
+  "private": true,
+  "homepage": "https://it-teaching-abo-akademi.github.io/2018-interactive-web-apps-project-walicse15/",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "gh-pages": "^1.1.0",
+    "react": "^16.2.0",
+    "react-datetime": "^2.11.1",
+    "react-dom": "^16.2.0",
+    "react-icons": "^2.2.7",
+    "react-redux": "^5.0.6",
+    "react-scripts": "1.1.0",
+    "redux": "^3.7.2",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "sweetalert": "^2.1.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  }
+}

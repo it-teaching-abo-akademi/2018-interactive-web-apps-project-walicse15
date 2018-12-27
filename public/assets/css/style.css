@@ -1,0 +1,145 @@
+/* --------- Custom styling for app ---------- */
+* {
+    box-sizing: border-box;
+}
+
+input[type=radio] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: lighten($bg,40%);
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+input[type=radio]:checked + label{
+  color: lighten($bg,60%);
+  background: $fg;
+}
+
+label + input[type=radio] + label {
+  border-left: solid $borderWidth $fg;
+}
+
+.radio-group {
+  border: solid $borderWidth $fg;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.btn,.label_begin{ 
+    margin-left: 4%;
+    margin-top: 1%;
+}
+
+.popup { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.errortext{ 
+    position:fixed;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    font-size: 16px;
+}
+
+.td1{
+    font-size: 15px;
+    text-align: center;
+    width: 40%;
+    font-weight: bolder;
+}
+
+.visible{ 
+    visibility: visible;
+}
+
+.unvisible{
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 10%;
+    visibility: hidden;
+}
+
+.faclose{
+    float: right;
+    margin-right: 3%;
+    margin-bottom: 0%;
+}
+
+.h5{
+    color: #191617;
+    margin-top: 8px;
+    width: 20%;
+    margin-left: 7.5%;
+    font-weight: 900;
+}
+
+.portfolio{
+    font-family: SansSerif;
+    margin-top: 3%;
+    font-size: 18px;
+    width: 92%;
+    margin-left: 4%;
+    display: inline-block;
+    border-radius: 10px;
+	border: black;
+	border-style: dotted;
+}
+
+.buttons_footer{
+    margin-left: 15%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.button1{
+    width: 13%;
+}
+@media only screen and (max-width: 930px) {
+    .portfolio{
+        width: 70%;
+        margin-left: 4%;
+    }
+}
+
+@media only screen and (min-width: 930px) and (max-width: 1200px) {
+    .buttons_footer{
+        margin-left: 15%;
+    }
+    .button1{
+        width: 13%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .buttons_footer{
+        margin-left: 2%;
+    }
+    .button1{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .buttons_footer{
+        text-align: center;
+    }
+    .button1{
+        width: 100%;
+    }
+}
